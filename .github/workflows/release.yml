@@ -35,4 +35,5 @@ jobs:
           # override GitHub's bind mount from host, we don't want anything from there and it interferes with ssh
           export HOME=$(getent passwd $(id -u) | cut -f6 -d:)
           cd /build
-          release-runner -r https://github.com/$GITHUB_REPOSITORY -t $(basename $GITHUB_REF) ./cockpituous-release
+          release-runner -v -r git@github.com:$GITHUB_REPOSITORY.git -t $(basename $GITHUB_REF) ./cockpituous-release
+        # release-runner -r https://github.com/$GITHUB_REPOSITORY -t $(basename $GITHUB_REF) ./cockpituous-release
