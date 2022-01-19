@@ -16,7 +16,7 @@ jobs:
           # override GitHub's bind mount from host, we don't want anything from there and it interferes with ssh
           export HOME=$(getent passwd $(id -u) | cut -f6 -d:)
 
-          # secrets come from https://github.com/organizations/ORGNAME/settings/secrets or https://github.com/OWNER/REPO/settings/secrets
+          # secrets come from https://github.com/organizations/TheBoxServer/settings/secrets or https://github.com/TheBoxServer/TheBox.Cockpit/settings/secrets
           # see https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets
           echo '${{ secrets.SSH_KNOWN_HOSTS }}' > ~/.ssh/known_hosts
           echo '${{ secrets.FEDPKG_SSH_PUBLIC }}' > ~/.ssh/id_rsa.pub
