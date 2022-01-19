@@ -1,8 +1,8 @@
-# thebox-cockpit German translations
+# cockpit-thebox German translations
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: thebox-cockpit 1.0\n"
+"Project-Id-Version: cockpit-thebox 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-29 00:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"

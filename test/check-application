@@ -20,7 +20,7 @@ class TestApplication(testlib.MachineCase):
         b = self.browser
         m = self.machine
 
-        self.login_and_go("/thebox-cockpit")
+        self.login_and_go("/cockpit-thebox")
         # verify expected heading
         b.wait_text(".pf-c-card__title", "TheBox Management")
 
@@ -51,10 +51,10 @@ class TestApplication(testlib.MachineCase):
         b.reload(ignore_cache=True)
         b.wait_visible("#content")
         # menu label (from manifest) should be translated
-        b.wait_text("#host-apps a[href='/thebox-cockpit']", "Bausatz")
+        b.wait_text("#host-apps a[href='/cockpit-thebox']", "Bausatz")
 
-        b.go("/thebox-cockpit")
-        b.enter_page("/thebox-cockpit")
+        b.go("/cockpit-thebox")
+        b.enter_page("/cockpit-thebox")
         # page label (from js) should be translated
         b.wait_in_text(".pf-c-alert__title", "Läuft auf")
 

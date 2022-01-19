@@ -1,7 +1,7 @@
 summary:
     Run browser integration tests on the host
 require:
-  - thebox-cockpit
+  - cockpit-thebox
   - cockpit-ws
   - cockpit-system
   - bzip2

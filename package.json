@@ -1,5 +1,5 @@
 {
-  "name": "thebox-cockpit",
+  "name": "thebox",
   "description": "Cockpit module for TheBox",
   "main": "index.js",
   "repository": "git@github.com:iamdavidfrancis/TheBox.git",

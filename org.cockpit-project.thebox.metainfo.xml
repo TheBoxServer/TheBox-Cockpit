@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>com.thebox.cockpit</id>
+  <id>org.cockpit_project.cockpit-thebox</id>
   <metadata_license>CC0-1.0</metadata_license>
   <name>TheBox Management</name>
   <summary>Manangement Console for TheBox</summary>

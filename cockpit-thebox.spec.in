@@ -1,4 +1,4 @@
-Name: thebox-cockpit
+Name: cockpit-thebox
 Version: %{VERSION}
 Release: 1%{?dist}
 Summary: TheBox Cockpit Module
