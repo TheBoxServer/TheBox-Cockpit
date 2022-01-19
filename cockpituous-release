@@ -14,7 +14,7 @@ RELEASE_SOURCE="_release/source"
 RELEASE_SPEC="cockpit-thebox.spec"
 RELEASE_SRPM="_release/srpm"
 
-job release-source
+job release-source -v
 job release-srpm -V
 
 # Once you have a Fedora package, can upload to Fedora automatically: Provide the
