@@ -7,7 +7,7 @@ on:
 jobs:
   cockpituous:
     runs-on: ubuntu-latest
-    environment: release
+    #environment: release
     container:
       image: ghcr.io/cockpit-project/release
     steps:
@@ -33,4 +33,5 @@ jobs:
           # override GitHub's bind mount from host, we don't want anything from there and it interferes with ssh
           export HOME=$(getent passwd $(id -u) | cut -f6 -d:)
           cd /build
+          echo 'release-runner -r https://github.com/$GITHUB_REPOSITORY -t $(basename $GITHUB_REF) ./cockpituous-release'
           release-runner -r https://github.com/$GITHUB_REPOSITORY -t $(basename $GITHUB_REF) ./cockpituous-release
