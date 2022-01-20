@@ -14,7 +14,7 @@ RELEASE_SOURCE="_release/source"
 RELEASE_SPEC="cockpit-thebox.spec"
 RELEASE_SRPM="_release/srpm"
 
-job release-source -v
+job release-source
 job release-srpm -V
 
 # Once you have a Fedora package, can upload to Fedora automatically: Provide the
@@ -31,7 +31,7 @@ job release-srpm -V
 # so that failures there will fail the release early, before publishing on GitHub
 
 # this needs no explicit secrets, just the GitHub action provided default one
-job release-github
+job release-github -v
 
 # This needs secrets.COPR_TOKEN in .github/workflows/release.yml
 # job release-copr @myorg/myrepo
